@@ -56,7 +56,7 @@ public class SearchBox extends RelativeLayout {
 
 	private MaterialMenuView materialMenu;
 	private TextView logo;
-	private EditText search;
+	private SearchView.SearchAutoComplete search;
 	private Context context;
 	private ListView results;
 	private ArrayList<SearchResult> resultList;
@@ -112,7 +112,7 @@ public class SearchBox extends RelativeLayout {
 		this.isMic = true;
 		this.materialMenu = (MaterialMenuView) findViewById(R.id.material_menu_button);
 		this.logo = (TextView) findViewById(R.id.logo);
-		this.search = (EditText) findViewById(R.id.search);
+		this.search = (SearchView.SearchAutoComplete) findViewById(R.id.search);
 		this.results = (ListView) findViewById(R.id.results);
 		this.context = context;
 		this.pb = (ProgressBar) findViewById(R.id.pb);
