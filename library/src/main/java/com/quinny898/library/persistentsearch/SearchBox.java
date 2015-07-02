@@ -726,9 +726,13 @@ public class SearchBox extends RelativeLayout {
 		}
 	}
 
+	public void setHint(String hintText){
+		this.search.setHint(hintText);
+	}
 	
-
-	
+	public void setHint(int resId){
+		this.search.setHint(resId);
+	}
 
 	private void closeSearch() {
 		this.materialMenu.animateState(IconState.BURGER);
